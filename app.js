@@ -1,7 +1,6 @@
 var Discord = require ('discord.js');
 var bot = new Discord.Client();
 var fs = require('fs');
-const token = process.env.token;
 
 var userData = JSON.parse(fs.readFileSync('storage/userData.json', 'utf8'));
 var commandList = fs.readFileSync('storage/commands.txt', 'utf8');
@@ -152,4 +151,4 @@ bot.on('ready', () => {
 
 
 
-bot.login(token).catch(err => console.log(err));
+bot.login('NTk0NzQ5NzAzNjIzNjcxODE4.Xir9ZA.fh0KBa6RMId913oeej7j31uGMl0');
